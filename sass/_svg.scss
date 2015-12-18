@@ -30,14 +30,21 @@
 }
 
 /**
- * Sets the background image as the event brite logo.
+ * Sets the background image as the Eventbrite logo.
  */
 @mixin svg-eventbrite-logo($fillColor: #fff) {
 	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2020%22%3E%3Cstyle%3E.cls-1%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M17.7%202.7c-.1.4-.3.8-.7%201-.3.3-.8.3-1.4.3-2.8%200-5.6-.1-8.4-.1-.3%201.3-.5%202.6-.8%203.9h5.1c1.3%200%202.7-.1%202.9%201%20.1.3%200%20.8-.1%201.1-.2.7-.5%201.2-1.1%201.4-.3.1-.7.1-1.2.1H5.6l-.9%204.2c2.9%200%205.6-.1%208.4-.1%201.1%200%202%20.4%201.8%201.5-.1.5-.2.9-.4%201.3s-.5.7-.9.8c-.4.1-1%20.1-1.6.1H8.6c-2.3%200-4.4.1-6.7.1-1.1%200-1.8-.5-2-1.4-.1-.5%200-1.1.1-1.5L3%202.3c.1-.5.2-.9.4-1.3.3-.6.8-1%201.4-1.1.8%200%201.7.1%202.6.1h1.7c1.7%200%203.3.1%205%20.1h1.7c1.1%200%202.1.1%202.3%201.1%200%20.6-.2%201.1-.4%201.5z%22%2F%3E%3C%2Fsvg%3E');
 }
+
+/**
+ * Sets the background image as the Facebook logo.
+ */
+@mixin svg-facebook-logo($fillColor: #fff) {
+	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%2020%22%3E%3Cstyle%3E.cls-1%7Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3Cpath%20id%3D%22f%22%20class%3D%22cls-1%22%20d%3D%22M6.5%2019.3v-8.8h2.9L9.9%207H6.5V4.9c0-1%20.3-1.7%201.7-1.7H10V.1C9.7.1%208.6%200%207.4%200%204.7%200%203%201.6%203%204.5V7H0v3.4h3v8.8h3.5z%22%2F%3E%3C%2Fsvg%3E');
+}
  
 /**
- * Sets the background image as the twitter logo.
+ * Sets the background image as the Twitter logo.
  */
 @mixin svg-twitter-logo($fillColor: #fff) {
 	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2040.6%22%3E%3Cstyle%3E.cls-1%7Bisolation%3Aisolate%3B%7D.cls-2%7Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3Bmix-blend-mode%3Amultiply%3B%7D%3C%2Fstyle%3E%3Cg%20class%3D%22cls-1%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M50%204.8a20.5%2020.5%200%200%201-5.9%201.6A10.3%2010.3%200%200%200%2048.6.8a20.5%2020.5%200%200%201-6.5%202.5%2010.3%2010.3%200%200%200-17.5%209.4A29.1%2029.1%200%200%201%203.5%201.9a10.3%2010.3%200%200%200%203.2%2013.7A10.2%2010.2%200%200%201%202%2014.3a10.3%2010.3%200%200%200%208.2%2010.1%2010.3%2010.3%200%200%201-2.7.4l-1.9-.2a10.3%2010.3%200%200%200%209.6%207.1%2020.6%2020.6%200%200%201-12.8%204.5H0a29%2029%200%200%200%2015.7%204.6c18.9%200%2029.2-15.6%2029.2-29.2v-1.3A20.8%2020.8%200%200%200%2050%204.8z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
