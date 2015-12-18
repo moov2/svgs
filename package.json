@@ -1,0 +1,11 @@
+{
+  "name": "moov2-svgs",
+  "version": "0.1.0",
+  "description": "Collection of reusable SVGs with easy integration with CSS.",
+  "author": "Moov2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moov2/svgs"
+  }
+}
