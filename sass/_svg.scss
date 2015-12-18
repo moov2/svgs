@@ -42,6 +42,13 @@
 @mixin svg-facebook-logo($fillColor: #fff) {
 	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%2020%22%3E%3Cstyle%3E.cls-1%7Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3Cpath%20id%3D%22f%22%20class%3D%22cls-1%22%20d%3D%22M6.5%2019.3v-8.8h2.9L9.9%207H6.5V4.9c0-1%20.3-1.7%201.7-1.7H10V.1C9.7.1%208.6%200%207.4%200%204.7%200%203%201.6%203%204.5V7H0v3.4h3v8.8h3.5z%22%2F%3E%3C%2Fsvg%3E');
 }
+
+/**
+ * Sets the background image as the Github logo.
+ */
+@mixin svg-github-logo($fillColor: #fff) {
+	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032.6%2031.8%22%3E%3Cstyle%3E.cls-1%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M16.3%200C7.3%200%200%207.3%200%2016.3c0%207.2%204.7%2013.3%2011.1%2015.5.8.1%201.1-.4%201.1-.8v-2.8c-4.5%201-5.5-2.2-5.5-2.2-.7-1.9-1.8-2.4-1.8-2.4-1.5-1%20.1-1%20.1-1%201.6.1%202.5%201.7%202.5%201.7%201.5%202.5%203.8%201.8%204.7%201.4.1-1.1.6-1.8%201-2.2-3.6-.4-7.4-1.8-7.4-8.1%200-1.8.6-3.2%201.7-4.4-.1-.3-.7-2%20.2-4.2%200%200%201.4-.4%204.5%201.7%201.3-.4%202.7-.5%204.1-.5%201.4%200%202.8.2%204.1.5%203.1-2.1%204.5-1.7%204.5-1.7.9%202.2.3%203.9.2%204.3%201%201.1%201.7%202.6%201.7%204.4%200%206.3-3.8%207.6-7.4%208%20.6.5%201.1%201.5%201.1%203V31c0%20.4.3.9%201.1.8%206.5-2.2%2011.1-8.3%2011.1-15.5C32.6%207.3%2025.3%200%2016.3%200z%22%2F%3E%3C%2Fsvg%3E');
+}
  
 /**
  * Sets the background image as the Twitter logo.
