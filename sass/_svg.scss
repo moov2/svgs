@@ -5,7 +5,7 @@
  */
 
 /**
- * Collection of mixins for setting the `background-image` of a selector to 
+ * Collection of mixins for setting the `background-image` of a selector to
  * an optimised inline SVG image.
  */
 
@@ -14,11 +14,11 @@
  */
 @function svg-str-replace($string, $search, $replace: '') {
 	$index: str-index($string, $search);
-  
+
 	@if $index {
     	@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
   	}
-  
+
   	@return $string;
 }
 
@@ -51,12 +51,19 @@
 }
 
 /**
+ * Sets the background image as a close icon.
+ */
+@mixin svg-icon-close($fillColor: #fff) {
+	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill-rule%3Aevenodd%3Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M27.5%2C14.3A1.9%2C1.9%2C0%2C0%2C0%2C24.3%2C13L20%2C17.3%2C15.7%2C13a1.9%2C1.9%2C0%2C0%2C0-3.2%2C1.2%2C1.8%2C1.8%2C0%2C0%2C0%2C.5%2C1.4L17.3%2C20%2C13%2C24.3a1.9%2C1.9%2C0%2C0%2C0%2C0%2C2.6%2C1.9%2C1.9%2C0%2C0%2C0%2C2.7%2C0L20%2C22.6l4.3%2C4.3a1.9%2C1.9%2C0%2C0%2C0%2C2.6-2.6L22.6%2C20l4.3-4.3a1.9%2C1.9%2C0%2C0%2C0%2C.5-1.4h0ZM20%2C0A20%2C20%2C0%2C1%2C0%2C40%2C20%2C20%2C20%2C0%2C0%2C0%2C20%2C0h0Zm0%2C36.2A16.2%2C16.2%2C0%2C1%2C1%2C36.2%2C20%2C16.3%2C16.3%2C0%2C0%2C1%2C20%2C36.2h0Zm0%2C0%22%2F%3E%3C%2Fsvg%3E');
+}
+
+/**
  * Sets the background image as the LinkedIn logo.
  */
 @mixin svg-linkedin-logo($fillColor: #fff) {
 	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cstyle%3E.st0%7Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M.3%206H4v12H.3V6zm1.9-6c1.2%200%202.2%201%202.2%202.2%200%201.2-1%202.2-2.2%202.2C1%204.3%200%203.4%200%202.2%200%201%201%200%202.2%200%22%2F%3E%3Cpath%20id%3D%22XMLID_1_%22%20class%3D%22st0%22%20d%3D%22M6.4%206H10v1.6c.5-.9%201.7-1.9%203.5-1.9%203.8%200%204.5%202.5%204.5%205.7V18h-3.7v-5.8c0-1.4%200-3.2-1.9-3.2s-2.2%201.5-2.2%203.1V18H6.4V6z%22%2F%3E%3C%2Fsvg%3E');
 }
- 
+
 /**
  * Sets the background image as the Twitter logo.
  */
