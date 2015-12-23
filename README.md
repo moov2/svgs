@@ -77,7 +77,17 @@ Logo for [Twitter](https://twitter.com/).
 
 Icon for use as a close button in UI.
 
-	@include svg-icon-close();
+	@include svg-icon-close($fillColor);
+
+#### Parameters
+
+`$fillColor`: Colour of the icon.
+
+### Next/Previous
+
+Icon for use as a next/previous button in UI.
+
+	@include svg-icon-next-prev($fillColor);
 
 #### Parameters
 

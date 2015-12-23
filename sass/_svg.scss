@@ -58,6 +58,13 @@
 }
 
 /**
+ * Sets the background image as a next/prev icon.
+ */
+@mixin svg-icon-next-prev($fillColor: #fff) {
+	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015.6%2028%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill-rule%3Aevenodd%3Bfill%3A%23#{svg-removeHashFromHex($fillColor)}%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M1.6%2C28A1.6%2C1.6%2C0%2C0%2C1%2C.5%2C25.2L11.7%2C14%2C0.5%2C2.8A1.6%2C1.6%2C0%2C0%2C1%2C2.8.5L15.1%2C12.9a1.6%2C1.6%2C0%2C0%2C1%2C0%2C2.3L2.8%2C27.5a1.6%2C1.6%2C0%2C0%2C1-1.1.5h0Zm0%2C0%22%2F%3E%3C%2Fsvg%3E');
+}
+
+/**
  * Sets the background image as the LinkedIn logo.
  */
 @mixin svg-linkedin-logo($fillColor: #fff) {
