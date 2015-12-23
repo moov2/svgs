@@ -57,6 +57,8 @@ Logo for [Facebook](https://facebook.com).
 
 Logo for [Github](https://github.com/).
 
+#### Mixin
+
 	@include svg-github-logo($fillColor);
 
 #### Parameters
@@ -66,6 +68,8 @@ Logo for [Github](https://github.com/).
 ### Twitter
 
 Logo for [Twitter](https://twitter.com/).
+
+#### Mixin
 
 	@include svg-twitter-logo($fillColor);
 
@@ -77,6 +81,8 @@ Logo for [Twitter](https://twitter.com/).
 
 Icon for use as a close button in UI.
 
+#### Mixin
+
 	@include svg-icon-close($fillColor);
 
 #### Parameters
@@ -86,6 +92,8 @@ Icon for use as a close button in UI.
 ### Next/Previous
 
 Icon for use as a next/previous button in UI.
+
+#### Mixin
 
 	@include svg-icon-next-prev($fillColor);
 
