@@ -35,7 +35,7 @@ Logo for [Evenbrite](https://www.eventbrite.co.uk/).
 
 #### Mixin
 
-	@include svg-eventbrite-logo();
+	@include svg-eventbrite-logo($fillColor);
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Logo for [Facebook](https://facebook.com).
 
 #### Mixin
 
-	@include svg-facebook-logo();
+	@include svg-facebook-logo($fillColor);
 
 #### Parameters
 
@@ -57,7 +57,7 @@ Logo for [Facebook](https://facebook.com).
 
 Logo for [Github](https://github.com/).
 
-	@include svg-github-logo();
+	@include svg-github-logo($fillColor);
 
 #### Parameters
 
@@ -67,7 +67,7 @@ Logo for [Github](https://github.com/).
 
 Logo for [Twitter](https://twitter.com/).
 
-	@include svg-twitter-logo();
+	@include svg-twitter-logo($fillColor);
 
 #### Parameters
 
